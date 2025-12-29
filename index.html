@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YourAnimeType | Reseñas y puntuaciones de anime</title>
+  <meta name="description" content="Descubrí anime, mirá los mejor puntuados y dejá reseñas anónimas en YourAnimeType." />
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+
+  <section class="hero">
+    <h1>YourAnimeType</h1>
+    <p>Reseñas anónimas y puntuación de anime para descubrir tu próxima serie.</p>
+    <input type="text" id="search" placeholder="Busca el anime que quieras..."/>
+
+
+
+    <button class="boton" type="button">Ver mejor puntuados</button>
+  </section>
+
+  <main>
+    <section aria-labelledby="discover-title">
+      <h2>Descubrí nuevos animes</h2>
+
+      <div id="animes"></div>
+
+
+      <button class="boton" type="button">Sorprendeme</button>
+    </section>
+
+    <section class="ranked" id="ranked" aria-labelledby="ranked-title">
+      <h2 id="ranked-title">Mejores valorados</h2>
+
+    </section>
+
+    <section id="reviews" aria-labelledby="reviews-title">
+      <h2 id="reviews-title">Reseñas</h2>
+
+      <article aria-labelledby="add-review-title">
+        <h3>Agregar reseña</h3>
+
+        <form id="form" action="#" method="post">
+          <div>
+            <label for="nick">Nombre</label>
+            <input type="text" id="nick" name="nick" minlength="1" maxlength="10" required />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+          </div>
+
+          <div>
+            <label for="rating">Puntuación</label>
+            <input type="number" id="rating" name="rating" min="1" max="10" required />
+          </div>
+
+          <button class="boton" type="submit">Enviar reseña</button>
+        </form>
+      </article>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>© 2025 Nacho y Mate. Todos los derechos reservados.</p>
+    <a href="" rel="noopener">GitHub Nacho</a><br />
+    <a href="" rel="noopener">GitHub Mate</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
