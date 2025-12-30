@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(json => {
       const html = json.data.map(anime => `
         <article class="anime-card">
-          <img src="${anime.images.jpg.image_url}" alt="${anime.title}" width="150">
+          <a href ="${anime.url}" target="_blank" rel="noopener noreferrer"><img src="${anime.images.jpg.image_url}" alt="${anime.title}" width="150"></a>
           <h3>${anime.title}</h3>
           <p>Episodios: ${anime.episodes ?? "N/A"}</p>
         </article>
