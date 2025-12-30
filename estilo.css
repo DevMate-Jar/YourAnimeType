@@ -35,7 +35,7 @@ body {
 }
 
 .hero {
-  background-image: url(fondopep.webp);
+  background-image: url('./fondopep.webp');
   background-size: cover;
   background-position: center;
   padding: 4rem 2rem;
