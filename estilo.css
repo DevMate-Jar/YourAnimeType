@@ -35,7 +35,9 @@ body {
 }
 
 .hero {
-  background: var(--primary-gradient);
+  background-image: url(fondopep.webp);
+  background-size: cover;
+  background-position: center;
   padding: 4rem 2rem;
   text-align: center;
   box-shadow: var(--shadow-lg);
