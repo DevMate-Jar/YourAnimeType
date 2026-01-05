@@ -35,7 +35,7 @@ body {
 }
 
 .hero {
-  background-image: url('./fondopep.webp');
+  background-image: url("./fondopep.webp");
   background-size: cover;
   background-position: center;
   padding: 4rem 2rem;
@@ -238,6 +238,25 @@ p {
   padding: 2rem;
   border-radius: 12px;
   margin: 2rem 0;
+}
+
+.reviews-show {
+  background: linear-gradient(
+    135deg,
+    rgba(217, 70, 166, 0.08) 0%,
+    rgba(236, 72, 153, 0.05) 100%
+  );
+  border-radius: 10px;
+  padding: 28px;
+  box-shadow: 0 0 12px rgba(217, 70, 166, 0.2);
+  margin-top: 32px;
+}
+
+.reviews-info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  
 }
 
 form {
